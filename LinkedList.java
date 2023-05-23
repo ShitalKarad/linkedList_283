@@ -6,8 +6,7 @@ public class LinkedList<T> {
 
 	public void push(T key) {
 		
-		Node<T> newNode = new Node<>();
-		
+		Node<T> newNode = new Node<>(key);
 		if (head == null) {
 			head = newNode;
 			tail = newNode;
@@ -18,5 +17,14 @@ public class LinkedList<T> {
 		}
 
 	}
+	
+	public void display() {
+        Node<T> temp = head;
+        while (temp != null) {
+            System.out.print(temp.key + " -> ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
 
 }
