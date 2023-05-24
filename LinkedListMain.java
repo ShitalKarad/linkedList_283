@@ -24,8 +24,12 @@ public class LinkedListMain {
 //		linkedList1.pop();
 //		linkedList1.display();
 		
-		System.out.println("deleted last element in the linkedList");
-		linkedList1.popLast();
+//		System.out.println("deleted last element in the linkedList");
+//		linkedList1.popLast();
+//		linkedList1.display();
+		
+		System.out.println("serching 30  in the linkedList");
+		linkedList1.searchNode(30);
 		linkedList1.display();
 		
 	}

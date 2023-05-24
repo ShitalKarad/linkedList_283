@@ -96,4 +96,27 @@ public class LinkedList<T> {
 		}
 	}
 
+	public Node<T> searchNode(T key) {
+		Node current = head;
+		int i = 1;
+		boolean flag = false;
+		if (head == null) {
+			System.out.println("List is empty");
+		} else {
+			while (current != null) {
+				if (current.key == key) {
+					flag = true;
+					break;
+				}
+				i++;
+				current = current.next;
+			}
+		}
+		if (flag)
+			System.out.println("Element is present in the list at the position : " + i);
+		else
+			System.out.println("Element is not present in the list");
+		return null;
+	}
+
 }
