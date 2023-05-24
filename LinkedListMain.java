@@ -20,8 +20,13 @@ public class LinkedListMain {
 		linkedList1.push(70);
 		linkedList1.display();
 
-		System.out.println("poping firsst element in the linkedList");
-		linkedList1.pop();
+//		System.out.println("poping firsst element in the linkedList");
+//		linkedList1.pop();
+//		linkedList1.display();
+		
+		System.out.println("deleted last element in the linkedList");
+		linkedList1.popLast();
 		linkedList1.display();
+		
 	}
 }
