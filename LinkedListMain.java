@@ -1,25 +1,26 @@
 package com.brigelabz;
 
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
 public class LinkedListMain {
 	public static void main(String[] args) {
 
-		  LinkedList<Integer> linkedList1 = new LinkedList<>();
-	        linkedList1.push(70);
-	        linkedList1.push(30);
-	        linkedList1.push(56);
-	        linkedList1.display();
+		List<Integer> linkedList1 = new LinkedList<>();
+		linkedList1.add(56);
+		linkedList1.add(30);
+		linkedList1.add(40);
+		linkedList1.add(70);
+		System.out.println("befor sorting in LinkedList "+linkedList1);
+		Collections.sort(linkedList1);
 
-//	            linkedList1.pop();
-//	            linkedList1.display();
+		SortedLinkedList sortedLinkedList = new SortedLinkedList<>();
+		for (Integer l : linkedList1) {
+			sortedLinkedList.push(l);
+		}
 
-//	            linkedList1.popLast();
-//	            linkedList1.display();
-	        //linkedList1.searchNode(30);
-	        linkedList1.searchAndInsert(30,40);
-	        linkedList1.display();
-	        
-	        linkedList1.searchAndDelete(40);
-	        linkedList1.display();
-	        
+		sortedLinkedList.display();
+
 	}
 }

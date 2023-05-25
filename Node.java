@@ -1,17 +1,20 @@
 package com.brigelabz;
 
-public class Node<T> {
-	 T key;
-	    Node<T> next;
+public class Node {//<T> implements Comparable<Node>
+	    int data;
+	    Node next;
 
-	    public Node() {
-
-	    }
-
-	    public Node(T key ) {
-	        this.key = key;
+	    public Node(int data ) {
+	        this.data = data;
+	        next = null;
 
 	    }
+
+//		@Override
+//		public int compareTo(Node o) {
+//			// TODO Auto-generated method stub
+//			return ((Comparable<Node>) this.key).compareTo((Node) o.key);
+//		}
 
 
 }
