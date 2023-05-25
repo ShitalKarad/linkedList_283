@@ -14,8 +14,11 @@ public class LinkedListMain {
 
 //	            linkedList1.popLast();
 //	            linkedList1.display();
-	        linkedList1.searchNode(30);
+	        //linkedList1.searchNode(30);
 	        linkedList1.searchAndInsert(30,40);
+	        linkedList1.display();
+	        
+	        linkedList1.searchAndDelete(40);
 	        linkedList1.display();
 	        
 	}
