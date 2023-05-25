@@ -116,7 +116,19 @@ public class LinkedList<T> {
 			System.out.println("Element is present in the list at the position : " + i);
 		else
 			System.out.println("Element is not present in the list");
-		return null;
+		return current;
+		
+	}
+
+	public void searchAndInsert(T searchKey, T insertKey) {
+		
+		Node<T> searchNode = searchNode(searchKey);// 30
+		Node<T> temp = searchNode.next;
+		Node<T> newNode = new Node<>(insertKey);// 40
+		if (searchNode != null) {
+			searchNode.next = newNode;// 30=>40
+			newNode.next = temp;// 40=?70
+		}
 	}
 
 }
